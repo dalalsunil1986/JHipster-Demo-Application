@@ -1,0 +1,19 @@
+entity Category{
+id Integer,
+name String required
+}
+
+entity Blog {
+id Integer,
+name String required,
+content String,
+createdAt ZonedDateTime required
+}
+
+relationship OneToMany {
+Category{categoryBlog} to Blog{category(name)}
+}
+
+paginate Blog with pagination
+dto * with mapstruct
+service all with serviceImpl

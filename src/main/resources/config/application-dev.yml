@@ -26,9 +26,9 @@ spring:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url:  jdbc:h2:tcp://localhost/~/blogApp;DB_CLOSE_DELAY=-1
-        username: blogapp
-        password: sa
+        url:  jdbc:h2:~/test;DB_CLOSE_DELAY=-1
+        username: sa
+        password: 
     h2:
         console:
             enabled: false
@@ -73,7 +73,7 @@ liquibase:
 #        keyAlias: blogapp
 # ===================================================================
 server:
-    port: 8080
+    port: 8081
 
 # ===================================================================
 # JHipster specific properties
